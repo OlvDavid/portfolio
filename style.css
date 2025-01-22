@@ -9,8 +9,11 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-/* INICIO HEADER */
+html{
+    scroll-behavior: smooth;
+}
 
+/* INICIO HEADER */
 .nav{
     background-color: #181818;
     height: 80px;
@@ -38,11 +41,9 @@ body{
 .nav-list a:hover{
     color: #FFFFFF;
 }
-
 /* FIM HEADER */
 
 /* INICIO MAIN */
-
 .main{
     width: 100%;
     background-color: #000;
@@ -86,7 +87,6 @@ body{
     text-decoration: none;
     color: #181818;
 }
-
 /* FIM MAIN */
 
 /* INICIO SOBRE */
@@ -120,7 +120,6 @@ body{
 /* FIM SOBRE */
 
 /* INICIO PROJETOS */
-
 .projects{
     width: 100%;
     display: flex;
@@ -176,7 +175,6 @@ body{
 /* FIM PROJETOS */
 
 /* INICIO RODAPE */
-
 footer{
     width: 100%;
     background-color: #181818;
@@ -195,5 +193,66 @@ footer a{
 footer p {
     margin-left: 12px;
 }
+/* FIM RODAPE */
 
 
+/* REPONSIVIDADE */
+
+@media (max-width: 1050px){
+    /* INICIO MAIN */
+    .main h1{
+        font-size: 45px;
+    }
+
+    .main p{
+        font-size: 18px;
+    }
+
+    .main{
+        background-size: cover;
+    }
+    /* FIM MAIN */
+
+    /* INICIO SOBRE */
+    .about{
+        flex-direction: column;
+        padding-top: 80px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+
+    .about div{
+        max-width: 80%;
+    }
+
+    .about div h2{
+        font-size: 45px;
+    }
+
+    .about img{
+        width: 80%;
+        margin-top: 30px;
+    }
+    /* FIM SOBRE */
+
+    /* INICIO PROJETOS */
+    .projects img{
+        width: 27.5%;
+    }
+    /* FIM PROJETOS */
+
+    /* INICIO RODAPÉ */
+    footer{
+        flex-direction: column;
+    }
+
+    footer h3{
+        font: 24px;
+        margin-bottom: 8px;
+    }
+
+    footer p{
+        margin: 0;
+    }
+}
